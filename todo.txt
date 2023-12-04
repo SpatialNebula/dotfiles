@@ -1,0 +1,9 @@
+sudo pacman -S --needed base-devel git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+pakepkg -si
+yay -S packagelist.txt
+cp data/~/.config ~/.config
+cp data/~/.local ~/.local
+cp data/~/Pictures ~/Pictures
+sudo cp usr/share/icons/* /usr/share/icons/
