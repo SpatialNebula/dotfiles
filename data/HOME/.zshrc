@@ -2,6 +2,14 @@
 alias ls = 'lsd'
 alias ll = 'lsd -l'
 
+# Keybinds
+bindkey "^[[1;5C" forward-word #ctrl forward
+bindkey "^[[1;5D" backward-word #ctrl back
+bindkey "^[[3~" delete-char #del
+bindkey '^[[3;5~' kill-word #ctrl del
+#idkifaccurate #### bindkey '^H' backward-kill-word #ctrl backspace
+
+
 # ZSH Syntax Highlighting
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh # catppuccin theme
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
